@@ -5,11 +5,24 @@ description = "hw_7"
 authors = ["Yuan Tian"]
 license = "MIT"
 readme = "README.md"
+packages = [
+    { include = "wordle_yt2988", from = "src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 
 
+[tool.poetry.group.dev.dependencies]
+sphinx = "^8.2.3"
+sphinx-autobuild = "^2025.8.25"
+sphinx-rtd-theme = "^3.0.2"
+myst-parser = "^4.0.1"
+pytest = "^8.4.2"
+pytest-cov = "^7.0.0"
+
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
